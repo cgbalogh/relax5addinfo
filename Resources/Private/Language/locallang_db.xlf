@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-06T10:03:09Z" product-name="relax5addinfo">
+		<header/>
+		<body>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute">
+				<source>Add Attribute</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.foreign_uid">
+				<source>Foreign Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.value">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.definition">
+				<source>Definition</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition">
+				<source>Definition</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.parent_object">
+				<source>Parent Object</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.value_list">
+				<source>Value List</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.add_text">
+				<source>Add Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

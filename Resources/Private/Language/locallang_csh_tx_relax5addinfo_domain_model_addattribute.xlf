@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-06T10:03:09Z" product-name="relax5addinfo">
+		<header/>
+		<body>
+			<trans-unit id="foreign_uid.description">
+				<source>Foreign Uid</source>
+			</trans-unit>
+			<trans-unit id="value.description">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="definition.description">
+				<source>definition</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

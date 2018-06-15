@@ -1,0 +1,84 @@
+{namespace addinfo=CGB\Relax5addinfo\ViewHelpers}
+{namespace r5f=CGB\Relax5validator\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+  <div class="rlx5-modalform-stretcher" style="height: 0; min-width: 500px;"></div>  
+  
+  <f:switch expression="{field.type}">
+    <f:case value="textarea">
+      <label for="value" class="rlx5-top">
+        {field.labelText}
+      </label>
+      
+      <r5f:form.textarea 
+        id="field_{field.uid}" 
+        property="value" 
+        class="rlx5-jte" validatorContext="AddInfo_{field.id}" 
+      />      
+    </f:case>
+    
+    <f:case value="date">
+      <label for="value">
+        {field.labelText}
+      </label>
+
+      <r5f:form.textfield
+        id="field_{field.uid}" 
+        property="value" 
+        value="{addinfo:show(value:addAttribute.value, type:'date')}"
+        class="datepicker" 
+        validatorContext="AddInfo_{field.id}" 
+      />      
+    </f:case>
+
+    <f:case value="checkbox">
+      <label for="value">
+          {field.labelText}
+      </label>
+      <f:form.checkbox 
+        id="field_{field.uid}" 
+        property="value" 
+        value="1" />
+    </f:case>
+    
+    <f:case value="optiongroup">
+      <label for="input_{input.uid}" class="rlx5-top">
+          {field.labelText}
+      </label>
+      
+      <span class="rlx5-span-as-input">
+        <f:for each="{field.valueListArray}" key="index" as="element">
+          <f:form.radio id="field_{field.uid}_{value}" property="value" value="{element.value}" />
+          <label for="field_{field.uid}_{value}" class="rlx5-min" style="font-weight: normal; line-height: normal;">{element.label}</label><br />
+        </f:for>
+      </span>
+    </f:case>
+    
+    <f:case value="select">
+      <label for="value">
+          {field.labelText}
+      </label>
+
+      <r5f:form.select 
+        id="field_{field.uid}" 
+        options="{field.valueListArray}"
+        optionValueField="value"
+        optionLabelField="label"
+        property="value"
+        validatorContext="AddInfo_{field.id}"
+      />
+    </f:case>
+    
+    <f:defaultCase>
+      <label for="value">
+        {field.labelText}
+      </label>
+      
+      <f:form.textfield property="value" />      
+    </f:defaultCase>
+  </f:switch>
+  
+  <br />
+    
+</html>

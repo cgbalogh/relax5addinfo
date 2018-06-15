@@ -1,0 +1,50 @@
+<f:for each="{addInfo}" as="element">
+  <label for="addInfo_{element.name}">
+      {element.label}
+  </label>
+  
+  <f:switch expression="{element.type}">
+
+    <f:case value="textfield">
+      <f:form.textfield id="addInfo_{element.name}" name="relax5addinfo[{element.name}]" value="{element.value}" />
+    </f:case>
+
+    <f:case value="select">
+      <f:form.select 
+        name="relax5addinfo[{element.name}]" 
+        id="relax5addinfo_{definition.uid}" 
+        options="{element.valueList}" 
+        optionLabelField="label" 
+        optionValueField="value" 
+        class="tx_relax5addinfo-select" 
+        value="{element.value}" 
+      />
+    </f:case>
+
+    <f:case value="optiongroup">
+      <f:for each="{element.valueList}" key="optionKey" as="optionValue">
+        <f:form.radio 
+          name="relax5addinfo[{element.name}]" 
+          id="relax5addinfo_{element.name}_{optionValue.label}"
+          value="{optionValue.value}" 
+          class="tx_relax5addinfo-radio" 
+          checked="{element.value}=={optionValue.value}"
+          />&nbsp;<label for="relax5addinfo_{element.name}_{optionValue.label}" style="text-align: left; width: auto; display: inline-block;font-weight: normal">{optionValue.label}&nbsp;</label>
+      </f:for>
+    </f:case>
+    
+    <f:case value="checkbox">
+      <f:form.checkbox 
+        name="relax5addinfo[{element.name}]" 
+        id="relax5addinfo_{definition.uid}" 
+        value="1" 
+        checked="{element.value}" />
+    </f:case>
+
+    <f:case default="TRUE">
+      <f:form.textfield id="addInfo_{element.name}" name="relax5addinfo[{element.name}]" value="{element.value}" />
+    </f:case>
+    
+  </f:switch>
+  <br />
+</f:for>
