@@ -15,7 +15,7 @@ namespace CGB\Relax5addinfo\Domain\Repository;
 /**
  * The repository for AddAttributes
  */
-class AddAttributeRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class AddAttributeRepository extends \CGB\Fechangelog\Persistence\Repository // \TYPO3\CMS\Extbase\Persistence\Repository
 {
     /**
      * @var array

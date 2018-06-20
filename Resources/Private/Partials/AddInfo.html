@@ -1,5 +1,5 @@
 <f:for each="{addInfo}" as="element">
-  <label for="addInfo_{element.name}">
+  <label for="addInfo_{element.name}" title="{element.description}">
       {element.label}
   </label>
   
@@ -12,7 +12,7 @@
     <f:case value="select">
       <f:form.select 
         name="relax5addinfo[{element.name}]" 
-        id="relax5addinfo_{definition.uid}" 
+        id="relax5addinfo_{element.uid}" 
         options="{element.valueList}" 
         optionLabelField="label" 
         optionValueField="value" 
@@ -36,7 +36,7 @@
     <f:case value="checkbox">
       <f:form.checkbox 
         name="relax5addinfo[{element.name}]" 
-        id="relax5addinfo_{definition.uid}" 
+        id="relax5addinfo_{element.uid}" 
         value="1" 
         checked="{element.value}" />
     </f:case>

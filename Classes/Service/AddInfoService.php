@@ -78,8 +78,10 @@ class AddInfoService implements \TYPO3\CMS\Core\SingletonInterface {
             
                 // build result array
                 $addInfoArray[] = [
+                    'uid' => $additionalField->getUid(),
                     'name' => $additionalField->getName(),
                     'label' => $additionalField->getLabeltext(),
+                    'description' => $additionalField->getDescription(),
                     'valueList' => $additionalField->getValueListArray(),
                     'type' => $additionalField->getType(),
                     'value' => $value,
