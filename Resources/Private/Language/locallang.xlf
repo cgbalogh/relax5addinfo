@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-05-06T10:03:09Z" product-name="relax5addinfo">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-02-06T09:30:29Z" product-name="relax5addinfo">
 		<header/>
 		<body>
 			<trans-unit id="tx_relax5addinfo_domain_model_addattribute">
 				<source>Add Attribute</source>
 			</trans-unit>
-			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.foreign_uid">
-				<source>Foreign Uid</source>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.parent_object">
+				<source>Parent Object</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.reference">
+				<source>Reference</source>
 			</trans-unit>
 			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.value">
 				<source>Value</source>
 			</trans-unit>
-			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.definition">
-				<source>Definition</source>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.permissions">
+				<source>Permissions</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.owner">
+				<source>Owner</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.usergroup">
+				<source>Usergroup</source>
 			</trans-unit>
 			<trans-unit id="tx_relax5addinfo_domain_model_definition">
 				<source>Definition</source>
@@ -21,8 +30,47 @@
 			<trans-unit id="tx_relax5addinfo_domain_model_definition.parent_object">
 				<source>Parent Object</source>
 			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.fields">
+				<source>Fields</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field">
+				<source>Field</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.label_text">
+				<source>Label Text</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.value_list">
+				<source>Value List</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.add_text">
+				<source>Add Text</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.eval">
+				<source>Eval</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.store_key_only">
+				<source>Store Key Only</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.definition">
+				<source>Definition</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.atore_key_only">
+				<source>Atore Key Only</source>
+			</trans-unit>
 			<trans-unit id="tx_relax5addinfo_domain_model_definition.name">
 				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.label_text">
+				<source>Label Text</source>
 			</trans-unit>
 			<trans-unit id="tx_relax5addinfo_domain_model_definition.type">
 				<source>Type</source>
@@ -32,6 +80,63 @@
 			</trans-unit>
 			<trans-unit id="tx_relax5addinfo_domain_model_definition.add_text">
 				<source>Add Text</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.eval">
+				<source>Eval</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_definition.store_key_only">
+				<source>Store Key Only</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.reference_id">
+				<source>Reference Id</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.foreign_object">
+				<source>Foreign Object</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.foreign_uid">
+				<source>Foreign Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_addattribute.tx_relax5addinfo_key">
+				<source>Key</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.select_from_list">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.textfield">
+				<source>Textfield</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.textarea">
+				<source>Textarea</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.select">
+				<source>Select (Dropdown)</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.selectexpandable">
+				<source>Select (Dropdown) with multiple entries</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.checkbox">
+				<source>Checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.optiongroup">
+				<source>Optiongroup</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.datetime">
+				<source>Datetime</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_domain_model_field.type.time">
+				<source>Time</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_general.date_format">
+				<source>m/d/Y</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_general.datetime_format">
+				<source>m/d/Y H:i</source>
+			</trans-unit>
+			<trans-unit id="tx_relax5addinfo_general.time_format">
+				<source>H:i:s</source>
 			</trans-unit>
 		</body>
 	</file>

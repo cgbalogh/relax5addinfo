@@ -41,6 +41,14 @@
         checked="{element.value}" />
     </f:case>
 
+    <f:case value="date">
+      <f:form.textfield id="addInfo_{element.name}" 
+        name="relax5addinfo[{element.name}]" 
+        value="{element.value->f:format.date(format: '{f:translate(key: \'tx_relax5addinfo_general.date_format\')}')}" 
+        class="datepicker"
+      />
+    </f:case>
+      
     <f:case default="TRUE">
       <f:form.textfield id="addInfo_{element.name}" name="relax5addinfo[{element.name}]" value="{element.value}" />
     </f:case>
